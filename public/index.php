@@ -37,6 +37,10 @@ require __DIR__.'/../vendor/autoload.php';
 
 $app = require_once __DIR__.'/../bootstrap/app.php';
 
+ob_start();
+require "ci.php";
+ob_clean();
+
 /*
 |--------------------------------------------------------------------------
 | Run The Application
