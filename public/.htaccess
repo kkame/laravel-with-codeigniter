@@ -14,9 +14,9 @@
     RewriteCond %{REQUEST_URI} (.+)/$
     RewriteRule ^ %1 [L,R=301]
 
-    # Handle Front Controller...
-    RewriteCond $1 ^(codeigniter)
-    RewriteCond %{REQUEST_FILENAME} !-f
+    # Codeigniter로 동작시켜야 하는 url
+    RewriteCond %{REQUEST_URI} ^/(codeigniter)
+    RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ ci_with_laravel.php [L]
 
