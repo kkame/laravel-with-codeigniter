@@ -11,7 +11,11 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/', 'HomeController@index');
 
-    return view('welcome');
+
+Route::get('laravel', 'LaravelController@index');
+
+Route::prefix('laravel/')->group(function () {
+    Route::resource('releases','ReleaseNewsController');
 });
