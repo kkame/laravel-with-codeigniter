@@ -51,7 +51,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 $route['default_controller'] = 'welcome';
 
-$route['laravel/(.*)'] = 'laravel/index';
-$route['(.+)']=''; // 라라벨에서 ci를 사용할 경우 존재하지 않는 url로 접근 하는 경우에 대한 처리. 실제로는 라라벨로 접근하는 url 패턴으로 제한해야한다
+$route['laravel/(.*)'] = 'laravel/index';// 라라벨에서 ci를 사용할 경우 존재하지 않는 url로 접근 하는 경우에 대한 처리. 실제로는 라라벨로 접근하는 url 패턴으로 제한해야한다
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
