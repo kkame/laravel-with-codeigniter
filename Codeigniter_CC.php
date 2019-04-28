@@ -72,6 +72,11 @@
  * @property CI_Jquery $jquery                    Jquery Class
  * @property CI_Utf8 $utf8                        Provides support for UTF-8 environments
  * @property CI_Security $security                Security Class, xss, csrf, etc...
+ *
+ *
+ * @property Article_model $article_model
+ * @property Board_model $board_model
+ * @property Board_library $board_library
  */
 class CI_Controller{}
 
