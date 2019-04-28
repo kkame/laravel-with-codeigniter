@@ -1680,6 +1680,7 @@ ol {
 @media only screen and (max-width: 576px) {
 	.hero-section {
 		height: auto;
+		min-height:100vh;
 	}
 	.intro-newslatter {
 		padding-bottom: 100px;

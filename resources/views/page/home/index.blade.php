@@ -10,11 +10,10 @@
     <div class="container">
         <div class="hero-text text-white">
             <h2>Laravel with Codeigniter</h2>
-            <p>라라벨과 코드이그나이터의 연동 예제를 포함하는 사이트입니다</p>
+            <p>라라벨과 코드이그나이터의 연동 예제를 다루고 있습니다</p>
         </div>
         <div class="text-center">
-            <button class="site-btn">Sign Up Now</button>
-            <button class="site-btn">Sign Up Now</button>
+            <a href="#course-section" class="site-btn">보러가기</a>
         </div>
     </div>
 </section>
@@ -22,7 +21,7 @@
 
 
 <!-- course section -->
-<section class="course-section spad">
+<section class="course-section spad" id="course-section">
     <div class="container">
 
         <div class="section-title mb-0">
@@ -43,9 +42,8 @@
                 <div class="course-item">
                     <div class="course-info">
                         <div class="course-text">
-                            <h5>샘플</h5>
-                            <p>준비중입니다</p>
-                            <div class="students">Codeigniter</div>
+                            <h5>Codeigniter</h5>
+                            <p>Codeigniter에서 Laravel의 기능을 활용하는 예제 모음입니다</p>
                         </div>
                     </div>
                 </div>
@@ -55,9 +53,8 @@
                 <div class="course-item">
                     <div class="course-info">
                         <div class="course-text">
-                            <h5>샘플</h5>
-                            <p>준비중입니다</p>
-                            <div class="students">Laravel</div>
+                            <h5>Laravel</h5>
+                            <p>Laravel에서 Codeigniter의 기능을 활용하는 예제 모음입니다</p>
                         </div>
                     </div>
                 </div>
