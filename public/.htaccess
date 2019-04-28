@@ -18,7 +18,7 @@
     RewriteCond %{REQUEST_URI} ^/(codeigniter)
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteRule ^ ci_with_laravel.php [L]
+    RewriteRule ^ ci.php [L]
 
     # Handle Front Controller...
     RewriteCond %{REQUEST_FILENAME} !-d

@@ -53,7 +53,11 @@
  *
  * NOTE: If you change these, also change the error_reporting() code below
  */
-	define('ENVIRONMENT', isset($_SERVER['CI_ENV']) ? $_SERVER['CI_ENV'] : 'development');
+
+use Illuminate\Contracts\Http\Kernel;
+use Illuminate\Http\Request;
+
+define('ENVIRONMENT', isset($_SERVER['CI_ENV']) ? $_SERVER['CI_ENV'] : 'development');
 
 /*
  *---------------------------------------------------------------
@@ -304,6 +308,24 @@ switch (ENVIRONMENT)
 	}
 
 	define('VIEWPATH', $view_folder.DIRECTORY_SEPARATOR);
+
+
+
+
+    if(defined("LARAVEL_START")===false) {
+
+        ## load autoload
+        require_once __DIR__.'/../vendor/autoload.php';
+
+        ## load laravel
+        require_once __DIR__ . '/../bootstrap/app.php';
+
+        $kernel = $app->make(Illuminate\Contracts\Http\Kernel::class);
+
+        $response = $kernel->handle(
+            $request = Illuminate\Http\Request::capture()
+        );
+    }
 
 /*
  * --------------------------------------------------------------------
